@@ -1,5 +1,26 @@
 <html lang="en">
     <head>
+        <!-- PWA Manifest -->
+<link rel="manifest" href="manifest.webmanifest">
+
+<!-- iOS App Mode -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<!-- iOS App Icons -->
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+
+<!-- iOS Splash Screens (optional but makes it look like a real app) -->
+<link rel="apple-touch-startup-image" href="splash/splash-2048x2732.png">
+<link rel="apple-touch-startup-image" href="splash/splash-1668x2388.png">
+
+<!-- Register Service Worker -->
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js');
+}
+</script>
+
        <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9M070PFZB"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
@@ -123,6 +144,7 @@ if ("serviceWorker" in navigator) {
       <script src="storage/js/themes.js"></script>
   </body>
 </html>
+
 
 
 
