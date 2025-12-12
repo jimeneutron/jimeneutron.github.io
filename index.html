@@ -16,6 +16,12 @@
 <link rel="apple-touch-icon" href="/icons/icon-192.png">
 <link rel="apple-touch-startup-image" href="/icons/splash.png">
 
+       <script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/service-worker.js");
+}
+</script>
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/images/ico.ico" type="image/x-icon">
@@ -117,6 +123,7 @@
       <script src="storage/js/themes.js"></script>
   </body>
 </html>
+
 
 
 
