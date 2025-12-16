@@ -1,7 +1,13 @@
 self.addEventListener("install", e => {
-  self.skipWaiting();
+  e.waitUntil(
+    caches.open("app-cache").then(cache => {
+      return cache.addAll(["./"]);
+    })
+  );
 });
 
-self.addEventListener("activate", e => {
-  clients.claim();
+self.addEventListener("fetch", e => {
+  e.respondWith(
+    caches.match(e.request).then(resp => resp || fetch(e.request))
+  );
 });
