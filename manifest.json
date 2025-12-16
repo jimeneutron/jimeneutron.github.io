@@ -1,28 +1,20 @@
 {
-  "name": "Jimmy Neutron's funtime funzone",
-  "short_name": "Jim.E.Neutron",
-  "start_url": "/jimeneutron.github.io/",
-  "scope": "/jimeneutron.github.io/",
+  "name": "My App",
+  "short_name": "MyApp",
+  "start_url": "./",
   "display": "standalone",
-  "background_color": "#0a0a0a",
-  "theme_color": "#0a0a0a",
-  "description": "jimmy jim johnson's fun place",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
   "icons": [
     {
-      "src": "/icons/icon-192.png",
+      "src": "icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/icons/icon-512.png",
+      "src": "icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
-    },
-    {
-      "src": "/icons/icon-512-maskable.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
     }
   ]
 }
